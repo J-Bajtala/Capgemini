@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Incident" max_length="40" name="x_361281_capgemini_incident" type="collection">
+    <element label="Capgemini" max_length="40" name="x_361281_capgemini_incident" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Fdgdrg" max_length="40" name="fdgdrg" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" default="4" label="Priority" max_length="40" name="priority" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1 - Critical" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2 - Average" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3 - Moderate" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="4 - Normal" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element label="Caller" mandatory="true" max_length="32" name="u_caller" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="1000" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Manager" max_length="40" name="u_manager" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="4 - normal" label="Priority" max_length="40" name="u_priority" type="string">
+            <choice>
+                <element inactive_on_update="false" label="1 - critical" sequence="0" value="1 - critical"/>
+                <element inactive_on_update="false" label="2 - site/department" sequence="1" value="2 - site/department"/>
+                <element inactive_on_update="false" label="3 - average" sequence="2" value="3 - average"/>
+                <element inactive_on_update="false" label="4 - normal" sequence="3" value="4 - normal"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="160" name="u_short_description" type="string"/>
+        <index name="index">
+            <element name="u_caller"/>
+        </index>
     </element>
 </database>

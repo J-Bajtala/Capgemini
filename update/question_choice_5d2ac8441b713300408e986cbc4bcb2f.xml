@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <misc>0</misc>
+        <order>200</order>
+        <question display_value="Choose your Ipad color:">2ff84c041b713300408e986cbc4bcb92</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-28 15:21:41</sys_created_on>
+        <sys_id>5d2ac8441b713300408e986cbc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Red</sys_name>
+        <sys_package display_value="Capgemini" source="x_361281_capgemini">367a7aa31b613300408e986cbc4bcb2b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Capgemini">367a7aa31b613300408e986cbc4bcb2b</sys_scope>
+        <sys_update_name>question_choice_5d2ac8441b713300408e986cbc4bcb2f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-28 15:21:41</sys_updated_on>
+        <text>Red</text>
+        <value>Red</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=5d2ac8441b713300408e986cbc4bcb2f"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>5d2ac8441b713300408e986cbc4bcb2f</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-28 15:21:41</sys_created_on>
+        <sys_id>3b2a48441b713300408e986cbc4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-28 15:21:41</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>5d2ac8441b713300408e986cbc4bcb2f</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-05-28 15:21:41</sys_created_on>
+        <sys_id>ff2a48441b713300408e986cbc4bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-05-28 15:21:41</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>
